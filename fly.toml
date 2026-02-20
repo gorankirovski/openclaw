@@ -17,7 +17,7 @@ primary_region = 'ams'
   processes = ['app']
 
 [processes]
-app = "node dist/index.js gateway --allow-unconfigured --port 18789 --bind lan"
+  app = "node dist/index.js gateway --allow-unconfigured --port 18789 --bind lan"
 
 [[vm]]
   memory = '2gb'
