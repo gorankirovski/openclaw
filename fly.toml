@@ -16,6 +16,9 @@ primary_region = 'ams'
   min_machines_running = 1
   processes = ['app']
 
+[processes]
+app = "node dist/index.js gateway --allow-unconfigured --port 18789 --bind lan"
+
 [[vm]]
   memory = '2gb'
   cpu_kind = 'shared'
