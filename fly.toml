@@ -18,7 +18,11 @@ primary_region = 'ams'
 
 [processes]
   app = "node dist/index.js gateway --allow-unconfigured --port 18789 --bind lan"
-
+  
+[mounts]
+  source = "openclaw_data"
+  destination = "/root/.openclaw"
+  
 [[vm]]
   memory = '2gb'
   cpu_kind = 'shared'
